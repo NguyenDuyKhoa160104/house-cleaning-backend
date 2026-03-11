@@ -1,5 +1,6 @@
 import jwt from 'jsonwebtoken';
 import Staff from '../models/Staff.js';
+import { STAFF_STATUS } from '../utils/constants.js';
 
 export const protect = async (req, res, next) => {
     try {
